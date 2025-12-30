@@ -1,0 +1,106 @@
+﻿@{
+    ViewBag.Title = "Education";
+}
+
+<style>
+    .section-title {
+        font-size: 3rem;
+        font-weight: 900;
+        text-align: center;
+        margin-bottom: 20px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .section-subtitle {
+        text-align: center;
+        color: #718096;
+        font-size: 1.2rem;
+        margin-bottom: 50px;
+    }
+
+    .education-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+        justify-items: center;
+        margin-top: 50px;
+    }
+
+    .education-card {
+        background: linear-gradient(135deg, #e0e7ff, #c3dafe);
+        border-radius: 20px;
+        padding: 25px;
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+        .education-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 50px rgba(102,126,234,0.2);
+        }
+
+    .education-level {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #2d3748;
+        margin-bottom: 5px;
+    }
+
+    .education-school {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #4a5568;
+        margin-bottom: 10px;
+    }
+
+    .education-year {
+        font-size: 0.9rem;
+        color: #718096;
+        margin-bottom: 10px;
+    }
+
+    .education-details {
+        font-size: 0.9rem;
+        color: #2d3748;
+        line-height: 1.4;
+    }
+</style>
+
+<div class="container" style="margin-top: 80px; margin-bottom: 80px;">
+    <h2 class="section-title">My Education</h2>
+    <p class="section-subtitle">Academic background and achievements</p>
+
+    <div class="education-grid">
+        <div class="education-card">
+            <div class="education-level">B.Sc. Information Technology</div>
+            <div class="education-school">J.M. Patel College of Commerce, Mumbai University</div>
+            <div class="education-year">2025 | Current Aggregate: 61%</div>
+            <div class="education-details">
+                Focused on full-stack development and software engineering concepts.
+            </div>
+        </div>
+
+        <div class="education-card">
+            <div class="education-level">H.S.C. (Science)</div>
+            <div class="education-school">Sanskar Dham Jr. College of Science, MSBSHSE</div>
+            <div class="education-year">2021 | 73%</div>
+            <div class="education-details">
+                Specialized in Physics, Chemistry, and Mathematics.
+            </div>
+        </div>
+
+        <div class="education-card">
+            <div class="education-level">S.S.C.</div>
+            <div class="education-school">Film City High School, MSBSHSE</div>
+            <div class="education-year">2019 | 66%</div>
+            <div class="education-details">
+                Completed secondary education with Science stream.
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,140 @@
+﻿@{
+    ViewBag.Title = "Skills";
+}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-pap6L/1+6g2Sh6s+4U5HEbZxWxKepXwT5Qd1mDdfVqkUi6E4xUCBm2CmM+ClcxgCkd2SX9X/5cAtW9kF2qRVag=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+    .section-title {
+        font-size: 3.5rem;
+        font-weight: 900;
+        text-align: center;
+        margin: 80px 0 20px;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .section-subtitle {
+        text-align: center;
+        color: #718096;
+        font-size: 1.3rem;
+        margin-bottom: 70px;
+    }
+
+    .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .skill-card {
+        background: linear-gradient(145deg, #e0e7ff, #f0f4ff); /* Soft fade gradient */
+        border-radius: 20px;
+        padding: 30px;
+        width: 180px;
+        height: 180px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 10px 40px rgba(102, 126, 234, 0.1);
+        transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+        text-align: center;
+    }
+
+        .skill-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(102, 126, 234, 0.2);
+            background: linear-gradient(145deg, #c3d0ff, #d9e1ff);
+        }
+
+    .skill-icon {
+        font-size: 3rem;
+        color: #667eea;
+        margin-bottom: 15px;
+    }
+
+    .skill-name {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #2d3748;
+    }
+
+    .skill-label {
+        margin-top: 5px;
+        font-size: 0.95rem;
+        color: #718096;
+    }
+</style>
+
+<div class="container">
+    <h2 class="section-title">Technical Skills</h2>
+    <p class="section-subtitle">My expertise across various technologies and frameworks</p>
+
+    <div class="skills-container">
+        <div class="skill-card">
+            <span class="skill-icon"><i class="fab fa-microsoft"></i></span>
+            <div class="skill-name">ASP.NET MVC</div>
+            <div class="skill-label">Expert</div>
+        </div>
+
+        <div class="skill-card">
+            <span class="skill-icon"><i class="fas fa-code"></i></span>
+            <div class="skill-name">C# Programming</div>
+            <div class="skill-label">Advanced</div>
+        </div>
+
+        <div class="skill-card">
+            <span class="skill-icon"><i class="fas fa-database"></i></span>
+            <div class="skill-name">SQL Server & ADO.NET</div>
+            <div class="skill-label">Advanced</div>
+        </div>
+
+        <div class="skill-card">
+            <span class="skill-icon"><i class="fas fa-server"></i></span>
+            <div class="skill-name">WCF Services</div>
+            <div class="skill-label">Intermediate</div>
+        </div>
+
+        <div class="skill-card">
+            <span class="skill-icon"><i class="fab fa-html5"></i></span>
+            <div class="skill-name">HTML5 & CSS3</div>
+            <div class="skill-label">Advanced</div>
+        </div>
+
+        <div class="skill-card">
+            <span class="skill-icon"><i class="fab fa-bootstrap"></i></span>
+            <div class="skill-name">Bootstrap</div>
+            <div class="skill-label">Advanced</div>
+        </div>
+
+        <div class="skill-card">
+            <span class="skill-icon"><i class="fab fa-js"></i></span>
+            <div class="skill-name">JavaScript & jQuery</div>
+            <div class="skill-label">Intermediate</div>
+        </div>
+
+        <div class="skill-card">
+            <span class="skill-icon"><i class="fas fa-microchip"></i></span>
+            <div class="skill-name">IoT Development</div>
+            <div class="skill-label">Arduino, Sensors</div>
+        </div>
+
+        <div class="skill-card">
+            <span class="skill-icon"><i class="fas fa-database"></i></span>
+            <div class="skill-name">Databases</div>
+            <div class="skill-label">MySQL, MongoDB</div>
+        </div>
+
+        <div class="skill-card">
+            <span class="skill-icon"><i class="fas fa-terminal"></i></span>
+            <div class="skill-name">Tools & IDEs</div>
+            <div class="skill-label">VSCode, Android Studio, XAMPP, Git</div>
+        </div>
+    </div>
+</div>

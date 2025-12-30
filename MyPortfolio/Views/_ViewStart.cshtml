@@ -1,0 +1,46 @@
+﻿<style>
+    .custom-navbar {
+        background-color: #e3f2fd;
+        padding: 12px 0;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-menu {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+        .nav-menu li {
+            margin: 0 20px;
+        }
+
+            .nav-menu li a {
+                text-decoration: none;
+                color: #0d47a1;
+                font-size: 16px;
+                font-weight: 600;
+                padding: 8px 14px;
+                border-radius: 6px;
+                transition: all 0.3s ease;
+            }
+
+                .nav-menu li a:hover {
+                    background-color: #bbdefb;
+                    color: #08306b;
+                }
+</style>
+
+<nav class="custom-navbar">
+    <ul class="nav-menu">
+        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+        <li>@Html.ActionLink("Skills", "Skills", "Home")</li>
+        <li>@Html.ActionLink("Projects", "Projects", "Home")</li>
+        <li>@Html.ActionLink("Education", "Education", "Home")</li>
+        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+
+    </ul>
+</nav>

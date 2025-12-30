@@ -1,0 +1,129 @@
+﻿@{
+    ViewBag.Title = "Projects";
+}
+
+<style>
+    .section-title {
+        font-size: 3rem;
+        font-weight: 900;
+        text-align: center;
+        margin-bottom: 10px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .section-subtitle {
+        text-align: center;
+        color: #718096;
+        font-size: 1.2rem;
+        margin-bottom: 50px;
+    }
+
+    .project-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        justify-items: center;
+        align-items: start;
+    }
+
+    .project-card {
+        background: white;
+        border-radius: 20px;
+        padding: 20px;
+        width: 100%;
+        max-width: 250px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        transition: all 0.4s ease;
+        text-align: center;
+        border: 2px solid transparent;
+    }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 50px rgba(102,126,234,0.2);
+            border-color: #667eea;
+        }
+
+    .project-icon {
+        width: 70px;
+        height: 70px;
+        border-radius: 15px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 2rem;
+        margin: 0 auto 15px;
+        transition: transform 0.4s ease;
+    }
+
+    .project-card:hover .project-icon {
+        transform: scale(1.1) rotate(10deg);
+    }
+
+    .project-title {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: #2d3748;
+        margin-bottom: 5px;
+    }
+
+    .project-description {
+        color: #718096;
+        margin-bottom: 10px;
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .tech-badge {
+        display: inline-block;
+        background: #e0e7ff;
+        color: #5a67d8;
+        padding: 5px 12px;
+        border-radius: 15px;
+        font-size: 0.85rem;
+        font-weight: 700;
+        margin: 2px;
+        text-decoration: none;
+    }
+
+    /* Extra spacing above the section */
+    .projects-wrapper {
+        margin-top: 100px; /* Adjust this value to move further down */
+        margin-bottom: 80px;
+        text-align: center;
+    }
+</style>
+
+<div class="projects-wrapper">
+    <h2 class="section-title">My Projects</h2>
+    <p class="section-subtitle">List of my practical implementations and technical work</p>
+
+    <div class="project-grid" style="margin-top: 50px;">
+        <!-- Add margin here -->
+        <div class="project-card">
+            <div class="project-icon"><i class="fas fa-list"></i></div>
+            <h3 class="project-title">ToDo App</h3>
+            <p class="project-description">Full-featured ToDo application with CRUD operations.</p>
+            <a href="https://github.com/atul-pr" target="_blank" class="tech-badge">GitHub</a>
+        </div>
+
+        <div class="project-card">
+            <div class="project-icon"><i class="fas fa-hamburger"></i></div>
+            <h3 class="project-title">Food Ordering System</h3>
+            <p class="project-description">Multi-vendor online food ordering system built with ASP.NET.</p>
+            <a href="https://github.com/atul-pr" target="_blank" class="tech-badge">GitHub</a>
+        </div>
+
+        <div class="project-card">
+            <div class="project-icon"><i class="fas fa-car"></i></div>
+            <h3 class="project-title">IoT Self-Control Car</h3>
+            <p class="project-description">Arduino & radar-based autonomous car with IoT integration.</p>
+            <a href="https://github.com/atul-pr" target="_blank" class="tech-badge">GitHub</a>
+        </div>
+    </div>
+</div>
+

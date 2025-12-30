@@ -1,0 +1,209 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-pap6L/1+6g2Sh6s+4U5HEbZxWxKepXwT5Qd1mDdfVqkUi6E4xUCBm2CmM+ClcxgCkd2SX9X/5cAtW9kF2qRVag=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+    .contact-container {
+        max-width: 800px;
+        margin: 100px auto 150px auto; /* Added more bottom margin */
+        padding: 40px;
+    }
+
+    .section-title {
+        font-size: 3rem;
+        font-weight: 900;
+        text-align: center;
+        margin-bottom: 20px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .section-subtitle {
+        text-align: center;
+        color: #718096;
+        font-size: 1.2rem;
+        margin-bottom: 50px;
+    }
+
+    .btn-resume {
+        display: inline-block;
+        padding: 8px 15px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        font-weight: 600;
+        border-radius: 50px;
+        text-decoration: none;
+        font-size: 0.9rem;
+        transition: 0.3s;
+    }
+
+        .btn-resume i {
+            margin-right: 5px;
+        }
+
+        .btn-resume:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102,126,234,0.3);
+        }
+
+    .contact-form {
+        background: white;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+        margin-bottom: 50px; /* Extra space below form */
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 8px;
+        }
+
+    .form-control {
+        width: 100%;
+        padding: 15px 20px;
+        border-radius: 10px;
+        border: 1.5px solid #e2e8f0;
+        font-size: 1rem;
+        transition: 0.3s;
+    }
+
+        .form-control:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102,126,234,0.1);
+            outline: none;
+        }
+
+    .btn-submit {
+        width: 100%;
+        padding: 15px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border: none;
+        border-radius: 50px;
+        font-weight: 700;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 1.1rem;
+    }
+
+        .btn-submit:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(102,126,234,0.3);
+        }
+
+    .contact-info-row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 25px;
+        margin-top: 40px;
+    }
+
+    .contact-box {
+        flex: 0 0 220px;
+        text-align: center;
+        background: linear-gradient(135deg, #667eea20 0%, #764ba220 100%); /* faded gradient */
+        padding: 25px 15px;
+        border-radius: 20px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        transition: 0.3s;
+    }
+
+        .contact-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(102,126,234,0.2);
+            background: linear-gradient(135deg, #667eea40 0%, #764ba240 100%); /* slightly stronger on hover */
+        }
+
+    .contact-icon {
+        font-size: 2rem;
+        color: white;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 15px auto;
+        border-radius: 50%;
+    }
+
+    .contact-title {
+        font-weight: 700;
+        margin-bottom: 5px;
+        color: #2d3748;
+    }
+
+    .contact-text {
+        color: #718096;
+        font-size: 0.95rem;
+    }
+</style>
+
+<div class="contact-container">
+    <h2 class="section-title">
+        Get In Touch
+        <a href="YOUR_GOOGLE_DRIVE_LINK_HERE" target="_blank" class="btn-resume">
+            <i class="fas fa-file-download"></i> Resume
+        </a>
+    </h2>
+    <p class="section-subtitle">Have a project in mind? Let's work together!</p>
+
+    <div class="contact-form">
+        <form>
+            <div class="form-group">
+                <label>Your Name</label>
+                <input type="text" class="form-control" placeholder="Enter your name" />
+            </div>
+            <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" class="form-control" placeholder="your.email@example.com" />
+            </div>
+            <div class="form-group">
+                <label>Subject</label>
+                <input type="text" class="form-control" placeholder="What's this about?" />
+            </div>
+            <div class="form-group">
+                <label>Message</label>
+                <textarea class="form-control" rows="5" placeholder="Tell me about your project..."></textarea>
+            </div>
+            <button type="submit" class="btn-submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+        </form>
+    </div>
+
+    <div class="contact-info-row">
+        <div class="contact-box">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-title">Email</div>
+            <div class="contact-text">your.email@example.com</div>
+        </div>
+        <div class="contact-box">
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+            <div class="contact-title">GitHub</div>
+            <div class="contact-text">github.com/yourusername</div>
+        </div>
+        <div class="contact-box">
+            <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+            <div class="contact-title">LinkedIn</div>
+            <div class="contact-text">linkedin.com/in/yourname</div>
+        </div>
+    </div>
+</div>
